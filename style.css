@@ -1,64 +1,57 @@
-
-/* 
-	STYLE.CSS:
-	One stylesheet to rule them all.
-	
-	selector { property:value }
-	
-*/
-
-@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lato);
-
-body {
-  background-color: #5f5345;
+/* im taking h1, h2, and h3 and aligning them to the center of the page */
+h1, h2, h3{
+    text-align: center;
 }
+
+/* making the background of the page black */
+hr{
+    height: 2px;
+    border: none;
+    background-color: black;
+    width: 700px;
+}
+
+/* taking away the margins of the page to reduce any unnecessary space and giving it a new color */
+body{
+    margin: 0;
+    background-color: black;
+}
+
+/* setting the margins for the header */
+.top{
+    width: 980px;
+    margin: auto;
+    color: #708d81;
+}
+
+
+main{ background-color: #708d81;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;}
+   
+/* changing the font color and padding on my paragraphes so give it a new look */
+p{
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 0.7em;
+}
+
+/* centering the image in the middle of the page so it looks fits better on the page */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 500px;
+  }
+
+  /* styling links */
+    a{ color: black;}
+  a:hover {color: brown; }
  
-.pageContainer {
-  width: 940px;
-  margin: 20px auto 0 auto;
-  padding: 20px;
-  background-color: #fff;
-}
- 
-.imageContainer {
-  float: left;
-  width: 620px;
-}
- 
-.textContainer {
-  float: left;
-  width: 300px;
-  margin-left: 20px;
-  margin-top: 20px;
-}
 
-img {
-  width: 100%;
+/* centeing the footer to the rest of the portfolio */
+footer{
+    text-align: center;
+    color: #aed9e0;
 }
- 
-h1 {
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 64px;
-  color: #8b1b00;
-}
- 
-p, li {
-  font-family: 'Lato', sans-serif;
-  font-size: 22px;
-  color: #51473b;
-}
-
-
-
-
-/* ---- Advanced ---- */
-/* This tag is a bit advanced for this lesson,  
-   but is needed to wrap the pageContainer 
-   around any sized content that is floated within it. */
-
-.pageContainer:after { 
-  content: " ";
-  display: table;
-  clear: both;
-}
- 
